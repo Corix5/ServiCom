@@ -1,0 +1,88 @@
+body{
+    background-color: rgb(248, 248, 248);
+}
+
+.leyenda{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    text-align: center;
+    background-color: white;
+}
+
+.leyenda a, p{
+    font-weight: bold;
+}
+main h2{
+    text-align: center;
+}
+.contenedorGeneral{
+    display: flex;
+    padding: 2%;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2%;
+    /* flex-basis: 100%; */
+    width: 80%;
+    max-width: 1300px;
+    margin-left: 50%;
+    transform: translateX(-50%);
+    box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.123);
+    background-color: white;
+    border-radius: 10px;
+}
+
+.contenedorOfertas{
+    display: flex;
+    flex-direction: column;
+    margin-right: 100px;
+    background-color: white;
+}
+
+.oferta{
+    margin-bottom: 20px;
+    border-style: solid;
+    border-radius: 10px;
+    padding: 20%;
+    width: 100%;
+    max-width: 400px;
+}
+
+.descripcionCompleta{
+    border-style: solid;
+    border-radius: 10px;
+    padding: 10%;
+    background-color: white;
+    max-width: 500px;
+}
+
+@media (max-width: 1300px){
+    .descripcionCompleta{
+        display: none;
+    }
+
+    .contenedorGeneral{
+        flex-direction: column;
+    }
+
+    .contenedorOfertas{
+        margin-left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .oferta{
+        padding: 5%;
+    }
+}
+
+@media (max-width: 806px){
+    .oferta{
+        width: 200px;
+    }
+}
+
+
+.paginas{
+    margin-left: 50%;
+    transform: translateX(-50%);
+}
+
