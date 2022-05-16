@@ -1,0 +1,9 @@
+main{
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.card{
+    margin-top: 80px;
+    box-shadow: 2px -2px 5px 5px rgba(0, 46, 65, 0.164);
+}
+
