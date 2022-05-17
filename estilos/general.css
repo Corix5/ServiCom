@@ -71,10 +71,10 @@ h2{
     width: 100%;
 }
 
-@media (max-width: 1500px){
+@media (max-width: 1300px){
     .flex-container{
         flex-direction: column;
-        width: 50%;
+        width: 100%;
     }
 
     .imagen{
