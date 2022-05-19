@@ -7,3 +7,7 @@ main{
     box-shadow: 2px -2px 5px 5px rgba(0, 46, 65, 0.164);
 }
 
+.formulario{
+    margin-left: 50%;
+    transform: translateX(-50%);
+}

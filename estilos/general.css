@@ -2,10 +2,6 @@
     box-sizing: border-box;
 }
 
-.formulario{
-    align-items: center;
-}
-
 body{
     position: relative;
     padding-bottom: 10em;
