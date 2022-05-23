@@ -1,0 +1,106 @@
+/* estilos del iframe de ofertas */
+
+body{
+    background-color: rgb(248, 248, 248);
+}
+
+#bodyOf{
+    background-color: white;
+    padding: 10px;
+}
+
+#bodyCont{
+    background-color: white;
+    padding: 10px;
+}
+
+.leyenda{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    text-align: center;
+    background-color: white;
+}
+
+.leyenda a, p{
+    font-weight: bold;
+}
+main h2{
+    text-align: center;
+}
+
+
+.contenedorOfertas{
+    background-color: white;
+}
+
+.oferta{
+    margin-bottom: 20px;
+    box-shadow: 2px 2px 1px 1px rgba(0, 46, 65, 0.164);
+    border-radius: 10px;
+    padding: 20px;
+    width: 80%;
+    height: 200px;
+}
+
+.paginas{
+    margin-left: 50%;
+    transform: translateX(-50%);
+}
+
+
+/* estilos del contenido general */
+
+.main{
+    display: flex;
+    padding: 2%;
+    justify-content: center;
+    align-items: center;
+}
+
+.main>*:first-child {
+    align-self: stretch;
+}
+
+.ofertasIframe{
+    width: 50%;
+}
+
+#iframe{
+    box-shadow: 2px -2px 5px 5px rgba(0, 46, 65, 0.164);
+    border-radius: 10px;
+}
+
+.descripcionCompleta{
+    box-shadow: 2px -2px 5px 5px rgba(0, 46, 65, 0.164);
+    border-radius: 10px;
+    padding: 15px;
+    background-color: white;
+    max-width: 500px;
+    margin-left: 50px;
+}
+
+@media (max-width: 1100px){
+    .descripcionCompleta{
+        display: none;
+    }
+
+    .contenedorOfertas{
+        margin-left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .ofertasIframe{
+        width: 800px;
+    }
+}
+
+@media (max-width: 600px){
+
+    .oferta{
+        width: 250px;
+    }
+}
+
+.prueba{
+    background-color: #21233B;
+}

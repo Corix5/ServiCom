@@ -1,0 +1,48 @@
+<div id="msgArea" class="leyenda">
+        <a href="/users/signin">Crea tu perfil</a>
+        <p id="msg"> Con tu perfil encuentra tu vacante ideal</p>
+        <hr>
+      </div>
+
+      <div class="selector">
+      <select id="selectorColor" class="form-select" aria-label="Default select example">
+        <option selected>Áreas de especialización</option>
+        <option value="1">Web Development</option>
+        <option value="2">Big Data</option>
+        <option value="3">Software Engineering</option>
+        <option value="4">Artificial Intelligence</option>
+        <option value="5">Design Thinking</option>
+        <option value="6">Mobile Services</option>
+        <option value="7">Cybersecurity</option>
+      </select>
+    </div>
+    
+    <div class="form-check form-switch filtro">
+      <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault">
+      <label id="label1" class="form-check-label" for="flexSwitchCheckDefault">Mostrar solo ofertas recientes</label>
+    </div>
+
+    <div class="form-check form-switch filtro">
+      <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckChecked" checked>
+      <label id="label2" class="form-check-label" for="flexSwitchCheckChecked">Mostrar solo ofertas de mi zona</label>
+    </div>
+      <hr id="hr1">
+      <main> 
+
+        <h2 id="title">Ofertas recientes</h2>
+        <hr id="hr2">
+        <div class="main">
+          <div class="ofertasIframe">
+            <iframe src="/html/ofertas.html" width="85%" height="750px" id="iframe"></iframe>
+          </div>
+  
+            <div class="descripcionCompleta">
+              <h3>UI/UX Design Specialist</h3>
+              <p>Buscamos candidato para servicio social especialista en UI/UX</p>
+              <iframe src="/html/contenidoOferta.html" frameborder="0" width="100%" height="550px"></iframe>
+                <hr>
+              <button type="button" class="btn btn-primary">Aplicar</button>
+            </div>
+        </div>
+       
+      </main>
