@@ -8,21 +8,21 @@
             <div class="card-body"></div>
 
             <div class="card-footer">
-                <form action="POST">
+                <form action="/users/signin" method="POST">
                     <div class="form-group">
-                        <input type="text" name="boleta" placeholder="Boleta" id="Boleta" class="form-control" autofocus>
+                        <input type="text" name="ipnID" placeholder="Boleta" id="Boleta" class="form-control" autofocus>
                     </div>
                     <br>
 
                     <div class="form-group">
-                        <input type="text" name="contrasena" placeholder="Contraseña" id="Contrasena" class="form-control">
+                        <input type="password" name="password" placeholder="Contraseña" id="Contrasena" class="form-control">
                     </div>
                     <br>
-                    <button class="btn btn-lg btn-primary" type="button"> <style> button{width: 100%;} </style> Iniciar Sesión</button>
+                    <button class="btn btn-lg btn-primary"> <style> button{width: 100%;} </style> Iniciar Sesión</button>
                     <br><br>
                     <div class="link">
                         <style>.link{text-align: center;}</style>
-                        <a href="#"> Olvidé mi contraseña</a>
+                        <a href="/email"> Olvidé mi contraseña</a>
                         <br><br>
                         <a href="/users/signup">  Crear Cuenta</a>
                     </div>  

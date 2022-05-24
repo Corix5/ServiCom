@@ -11,7 +11,7 @@ usersCtrl.renderSignUpForm = (req, res) => {
 usersCtrl.signup = async (req, res) =>{
     const errors = [];
 
-    const {nombre, correo, contrasena, contrasena2} = req.body;
+    const {nombre, apellidoPaterno, apellidoMaterno, boleta, carrera, correo, telefono, contrasena, contrasena2} = req.body;
     if(contrasena != contrasena2){
         errors.push({text: 'Contraseñas no coinciden'});
     }
@@ -22,6 +22,11 @@ usersCtrl.signup = async (req, res) =>{
         res.render('users/signup', {
             errors,
             nombre,
+            apellidoMaterno,
+            apellidoPaterno,
+            boleta,
+            carrera,
+            telefono,
             correo
         })
     } else {
@@ -30,7 +35,7 @@ usersCtrl.signup = async (req, res) =>{
             req.flash('error_msg', 'El correo ya está en uso');
              res.redirect('/users/signup');
          } else{
-                const newUser = new User({name: nombre, email:correo, password: contrasena});
+                const newUser = new User({name: nombre, lastnameP: apellidoPaterno, lastnameM: apellidoMaterno, ipnID: boleta, career: carrera, phone: telefono, email:correo, password: contrasena});
                 newUser.password = await newUser.encyptPassword(contrasena);
                 await newUser.save(); 
                 res.redirect('/users/signin');

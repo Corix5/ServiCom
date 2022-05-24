@@ -4,12 +4,12 @@ const LocalStrategy = require('passport-local').Strategy;
 const User = require('../models/User');
 
 passport.use(new LocalStrategy({
-    usernameField: 'email',
+    usernameField: 'ipnID',
     passwordField: 'password'
-}, async (email, password, done) => {
+}, async (ipnID, password, done) => {
     
-    //confirmar si el correo existe
-    const user = await User.findOne({email});
+    //confirmar si la boleta existe existe
+    const user = await User.findOne({ipnID});
     if(!user){
         return done(null, false, {message: 'No se encontró un usuario existente'});
     } else{

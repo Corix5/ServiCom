@@ -4,8 +4,18 @@ const bcrypt = require('bcryptjs');
 
 const userSchema = new Schema({
     name: {type: String, required: true},
+    lastnameP: {type: String, required: true},
+    lastnameM: {type: String, required: true},
+    ipnID: {type: Number, required: true},
+    career: {type: String, required: true},
     email: {type: String, required: true, unique: true},
-    password: {type: String, required: true}
+    phone: {type: Number, required: true, unique: true},
+    password: {type: String, required: true},
+    photo: {type: String},
+    repository: {type: String},
+    curriculum: {type: String},
+    personalDescription: {type: String},
+    profession: {type: String}
 }, {
     timestamps: true
 });
@@ -16,7 +26,6 @@ userSchema.methods.encyptPassword = async password =>{
 };
 
 userSchema.methods.matchPassword = async function (password) {
-    console.log(this.password)
     return await bcrypt.compare(password, this.password);
 };
 
