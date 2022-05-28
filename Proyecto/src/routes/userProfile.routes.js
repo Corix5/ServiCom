@@ -3,8 +3,8 @@ const router = Router();
 
 const { renderUserProfileForm, completeProfile} = require('../controllers/userProfile.controller')
 
-router.get('/userProfile/userProfileForm', renderUserProfileForm);
+router.get('/userProfile/:id', renderUserProfileForm);
 
-router.post('/userProfile/userProfileForm', completeProfile);
+router.put('/userProfile/:id', completeProfile);
 
 module.exports = router;
