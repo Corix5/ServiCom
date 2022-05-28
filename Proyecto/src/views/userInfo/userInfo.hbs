@@ -3,12 +3,11 @@
       <div class="flex-container">
 
         <div class="imagen">
-          <img src="/img/foto.jpeg" alt="">
+          <img src="/img/{{users.photo}}" alt="">
           <div class="infoImagen">
-            <p>Jr Web Developer</p>
-            <p class="blockquote-footer">Correo: anya123@alumno.ipn.mx </p>
-            <p class="blockquote-footer">Telefono: 5578009612</p>
-            <p class="blockquote-footer">GitHub: @anya05</p>
+            <p> {{users.profession}} </p>
+            <p class="blockquote-footer">Correo: {{users.email}} </p>
+            <p class="blockquote-footer">Telefono: {{users.phone}} </p>
           </div>
         </div>
 
@@ -27,10 +26,7 @@
         <div id="myTabContent" class="tab-content">
           <div class="tab-pane fade active show" id="home">
             <ul>
-              <li><a href="#"> proyecto 1</a></li>
-              <li><a href="#"> proyecto 2</a></li>
-              <li><a href="#"> proyecto 3</a></li>
-              <li><a href="#"> proyecto 4</a></li>
+              <li><a href="{{users.repository}}"> GitHub </a></li>
   
             </ul>
           </div>
@@ -39,7 +35,7 @@
           </div>
 
           <div class="tab-pane fade" id="description">
-            <p class="descripcion">Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio laboriosam iusto voluptas sint. Provident id adipisci blanditiis, unde vitae ad atque velit quis voluptas consequuntur quibusdam accusamus consequatur labore! Temporibus illum laboriosam voluptatum reiciendis id culpa cum quis eligendi tenetur vero debitis, veniam quasi veritatis optio, deleniti iure officiis. Ipsa?</p>
+            <p class="descripcion">{{users.personalDescription}}</p>
           </div>
         </div>
       </div>

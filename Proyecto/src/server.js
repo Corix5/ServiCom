@@ -51,6 +51,7 @@ app.use(require('./routes/users.routes'));
 app.use(require('./routes/userInfo.routes'));
 app.use(require('./routes/recuperacion.routes'));
 app.use(require('./routes/email.routes'));
+app.use(require('./routes/userProfile.routes'));
 
 //Archivos estaticos
 app.use(express.static(path.join(__dirname, 'public' )));

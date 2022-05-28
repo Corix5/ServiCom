@@ -11,6 +11,7 @@ const userSchema = new Schema({
     email: {type: String, required: true, unique: true},
     phone: {type: Number, required: true, unique: true},
     password: {type: String, required: true},
+    acknowledged: {type: Boolean},
     photo: {type: String},
     repository: {type: String},
     curriculum: {type: String},
