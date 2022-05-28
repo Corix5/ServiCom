@@ -9,6 +9,7 @@ const vacanteSchema = new Schema({
     activities: {type: String},
     noActivities: {type: String},
     speciality: {type: String},
+    candidates: {type: Number}
 
 }, {
     timestamps: true
