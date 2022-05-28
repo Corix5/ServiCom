@@ -4,28 +4,32 @@
         <hr>
       </div>
 
+    <form action="/vacantes" method="POST">
       <div class="selector">
-      <select id="selectorColor" class="form-select" aria-label="Default select example">
+      <select id="selectorColor" class="form-select" aria-label="Default select example" name="speciality ">
         <option selected>Áreas de especialización</option>
-        <option value="1">Web Development</option>
-        <option value="2">Big Data</option>
-        <option value="3">Software Engineering</option>
-        <option value="4">Artificial Intelligence</option>
-        <option value="5">Design Thinking</option>
-        <option value="6">Mobile Services</option>
-        <option value="7">Cybersecurity</option>
+        <option value="Web Development">Web Development</option>
+        <option value="Big Data">Big Data</option>
+        <option value="Software Engineering">Software Engineering</option>
+        <option value="Artificial Intelligence">Artificial Intelligence</option>
+        <option value="Design Thinking">Design Thinking</option>
+        <option value="Mobile Services">Mobile Services</option>
+        <option value="Cybersecurity">Cybersecurity</option>
       </select>
     </div>
     
     <div class="form-check form-switch filtro">
-      <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault">
+      <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault" name="filter1">
       <label id="label1" class="form-check-label" for="flexSwitchCheckDefault">Mostrar solo ofertas recientes</label>
     </div>
 
     <div class="form-check form-switch filtro">
-      <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckChecked" checked>
+      <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckChecked" checked name="filter2">
       <label id="label2" class="form-check-label" for="flexSwitchCheckChecked">Mostrar solo ofertas con más de un candidato</label>
     </div>
+    <br>
+    <button class="btn btn-lg btn-primary"> <style> button{width: 100%;} </style> Aplicar filtros</button>
+    </form>
       <hr id="hr1">
       <main> 
 

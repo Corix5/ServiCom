@@ -2,6 +2,13 @@ const checkbox = document.querySelector('#flexSwitchCheckDefaultDarkMode');
 
 checkbox.addEventListener("change", comprueba, false);
 
+const selectElement = document.querySelector('#selectorColor');
+
+selectElement.addEventListener('change', (event) => {
+    const valor = event.target.value;
+    console.log(valor);
+});
+
 function comprueba(){
   if(checkbox.checked){
       console.log("true");
