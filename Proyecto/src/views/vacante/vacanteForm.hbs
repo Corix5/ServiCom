@@ -1,0 +1,68 @@
+<div class="col-md-6 offset-md-3 formulario">
+        <div class="card">
+            <div class="card-header">
+                <style>h1{text-align: center;}</style>
+                <h1>Registrar vacante</h1>
+            </div>
+            <div class="card-body"></div>
+
+            <div class="card-footer">
+                <form action="/vacantes/add" method="POST">
+
+                    <div class="form-group">
+                    <input type="text" name="company" placeholder="Empresa" id="company" class="form-control" autofocus>
+                    </div>
+                    <br>
+                    
+                    <div class="form-group">
+                        <input type="text" name="name" placeholder="Titulo" id="nombre" class="form-control" autofocus>
+                    </div>
+                    <br>
+
+                    <div class="form-group">
+                        <input type="text" name="description" placeholder="description" id="description" class="form-control">
+                    </div>
+                    <br>
+
+                    <div class="form-group">
+                        <input type="text" name="completeDescription" placeholder="completeDescription" id="completeDescription" class="form-control">
+                    </div>
+                    <br>
+
+                    <div class="form-group">
+                        <input type="text" name="benefits" placeholder="benefits" id="benefits" class="form-control">
+                    </div>
+                    
+                    <div class="form-group">
+                    <div class="selector">
+                    <select id="selectorColor" class="form-select" aria-label="Default select example" name="speciality">
+                        <option selected>Áreas de especialización</option>
+                        <option value="1">Web Development</option>
+                        <option value="2">Big Data</option>
+                        <option value="3">Software Engineering</option>
+                        <option value="4">Artificial Intelligence</option>
+                        <option value="5">Design Thinking</option>
+                        <option value="6">Mobile Services</option>
+                        <option value="7">Cybersecurity</option>
+                    </select>
+                    </div>
+    
+                    </div>
+                    <br>
+                    <div class="form-group">
+                        <input type="text" name="activities" placeholder="activities" id="activities" class="form-control">
+                    </div>
+                    <br>
+
+                    <div class="form-group">
+                      <input type="text" name="noActivities" placeholder="noActivities" id="noActivities" class="form-control">
+                  </div>
+                  <br>
+    
+                    <button class="btn btn-lg btn-primary"> <style> button{width: 100%;} </style> Crear vacante</button>
+                    <br><br>
+                    
+                </form>
+            </div>
+        </div>
+    </div>
