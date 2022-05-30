@@ -5,9 +5,9 @@ const vacanteSchema = new Schema({
     company: {type: String},
     description: {type: String},
     completeDescription: {type: String},
-    benefits: {type: String},
-    activities: {type: String},
-    noActivities: {type: String},
+    benefits: {type: Array},
+    activities: {type: Array},
+    noActivities: {type: Array},
     speciality: {type: String},
 
 }, {

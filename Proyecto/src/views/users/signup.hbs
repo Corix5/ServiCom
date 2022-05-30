@@ -9,28 +9,29 @@
             <div class="card-footer">
                 <form action="/users/signup" method="POST">
                     
+                    <h4>Campos obligatorios</h4>
                     <div class="form-group">
-                        <input type="text" name="nombre" placeholder="Nombre" id="Nombre" class="form-control" autofocus>
+                        <input type="text" name="nombre" placeholder="Nombre" id="Nombre" class="form-control" autofocus required>
                     </div>
                     <br>
 
                     <div class="form-group">
-                        <input type="text" name="apellidoPaterno" placeholder="Apellido Paterno" id="ApellidoPaterno" class="form-control">
+                        <input type="text" name="apellidoPaterno" placeholder="Apellido Paterno" id="ApellidoPaterno" class="form-control" required>
                     </div>
                     <br>
 
                     <div class="form-group">
-                        <input type="text" name="apellidoMaterno" placeholder="Apellido Materno" id="ApellidoMaterno" class="form-control">
+                        <input type="text" name="apellidoMaterno" placeholder="Apellido Materno" id="ApellidoMaterno" class="form-control" required>
                     </div>
                     <br>
 
                     <div class="form-group">
-                        <input type="text" name="boleta" placeholder="Boleta" id="Boleta" class="form-control">
+                        <input type="text" name="boleta" placeholder="Boleta" id="Boleta" class="form-control" required>
                     </div>
                     
                     <div class="form-group">
                     <label for="exampleSelect1" class="form-label mt-4">Carrera</label>
-                    <select class="form-select" id="exampleSelect1" name="carrera">
+                    <select class="form-select" id="exampleSelect1" name="carrera" required>
                       <option>Ingeniería en Sistemas Computacionales Plan 2009</option>
                       <option>Ingeniería en Sistemas Computacionales Plan 2020</option>
                       <option>Licenciatura en Ciencia De Datos</option>
@@ -39,25 +40,26 @@
                     </div>
                     <br>
                     <div class="form-group">
-                        <input type="email" name="correo" placeholder="Correo Institucional" id="Correo" class="form-control">
+                        <input type="email" name="correo" placeholder="Correo" id="Correo" class="form-control" required>
                     </div>
                     <br>
 
                     <div class="form-group">
-                      <input type="text" name="telefono" placeholder="Telefono" id="Telefono" class="form-control">
+                      <input type="text" name="telefono" placeholder="Telefono" id="Telefono" class="form-control" required>
                   </div>
                   <br>
 
                     <div class="form-group">
-                        <input type="password" name="contrasena" placeholder="Contraseña" id="Contrasena" class="form-control">
+                        <input type="password" name="contrasena" placeholder="Contraseña" id="Contrasena" class="form-control" required>
                     </div>
                     <br>
 
                     <div class="form-group">
-                        <input type="password" name="contrasena2" placeholder="Confirmar contraseña" id="Contrasena2" class="form-control">
+                        <input type="password" name="contrasena2" placeholder="Confirmar contraseña" id="Contrasena2" class="form-control" required>
                     </div>
                     <br>
 
+                    <h4>Campos no obligatorios</h4>
                     <div class="userProfileForm">
 
                     <label for="photo">Selecciona foto de perfil</label>
@@ -67,14 +69,19 @@
 
                     <label for="profession">Agrega un titulo de tu descripción</label>
                     <br><br>
-                    <input type="text" placeholder="Ej: JR Web Developer" name="profession">
-                    <br><br>
+
+                    <input type="text" placeholder="Ej: JR Web Developer" name="profession" class="form-control">
+                    <br>
 
                     <label for="repository">Agrega algún link hacia tu portafolio</label>
                     <br><br>
 
-                    <input type="text" placeholder="Ej: Repositorios de GitHub" name="repository">
-                    <br><br>
+                    <input type="text" placeholder="Ej: Repositorios de GitHub" name="repository" class="form-control">
+
+                    <div id="containerPortafolio" class="newInput"></div>
+
+                    <button type="button" onclick="createInputPortafolio()">agregar</button>
+                    <br>
 
                     <label for="curriculum">Agrega tu curriculum</label>
                     <br><br>
@@ -85,7 +92,7 @@
                     <label for="personalDescription">Agrega un descripción personal</label>
                     <br><br>
 
-                    <input type="text" name="personalDescription" placeholder="Max 400 caracteres">
+                    <input type="text" name="personalDescription" placeholder="Max 400 caracteres" class="form-control">
   
                     <br><br>
                     <button class="btn btn-lg btn-primary"> <style> button{width: 100%;} </style> Crear Cuenta</button>

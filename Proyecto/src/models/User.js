@@ -13,7 +13,7 @@ const userSchema = new Schema({
     password: {type: String, required: true},
     acknowledged: {type: Boolean},
     photo: {type: String},
-    repository: {type: String},
+    repository: {type: Array},
     curriculum: {type: String},
     personalDescription: {type: String},
     profession: {type: String}

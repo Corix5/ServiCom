@@ -11,3 +11,8 @@ main{
     margin-left: 50%;
     transform: translateX(-50%);
 }
+
+.newInput{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}

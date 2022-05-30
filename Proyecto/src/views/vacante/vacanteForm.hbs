@@ -20,18 +20,23 @@
                     <br>
 
                     <div class="form-group">
-                        <input type="text" name="description" placeholder="description" id="description" class="form-control">
+                        <input type="text" name="description" placeholder="Descripción breve" id="description" class="form-control">
                     </div>
                     <br>
 
                     <div class="form-group">
-                        <input type="text" name="completeDescription" placeholder="completeDescription" id="completeDescription" class="form-control">
+                        <input type="text" name="completeDescription" placeholder="Descripción completa" id="completeDescription" class="form-control">
                     </div>
                     <br>
 
                     <div class="form-group">
-                        <input type="text" name="benefits" placeholder="benefits" id="benefits" class="form-control">
+                        <input type="text" name="benefits" placeholder="Beneficios" id="benefits" class="form-control">
                     </div>
+
+                    <div id="containerBenefits" class="newInput"></div>
+
+                    <button type="button" onclick="createInputBenefits()">agregar</button>
+                    <br>
                     
                     <div class="form-group">
                     <div class="selector">
@@ -50,14 +55,22 @@
                     </div>
                     <br>
                     <div class="form-group">
-                        <input type="text" name="activities" placeholder="activities" id="activities" class="form-control">
+                        <input type="text" name="activities" placeholder="Actividades a realizar" id="activities" class="form-control">
                     </div>
-                    <br>
+
+                    <div id="containerAct" class="newInput"></div>
+
+                    <button type="button" onclick="createInputAct()">agregar</button>
+                    <br><br>
 
                     <div class="form-group">
-                      <input type="text" name="noActivities" placeholder="noActivities" id="noActivities" class="form-control">
+                      <input type="text" name="noActivities" placeholder="Actividades a no realizar" id="noActivities" class="form-control">
                   </div>
-                  <br>
+
+                  <div id="containerNoAct" class="newInput"></div>
+
+                    <button type="button" onclick="createInputNoAct()">agregar</button>
+                    <br><br>
     
                     <button class="btn btn-lg btn-primary"> <style> button{width: 100%;} </style> Crear vacante</button>
                     <br><br>
