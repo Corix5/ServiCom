@@ -1,0 +1,26 @@
+.tabla_titulo{ 
+    width: 100%;
+}
+.columna_titulo{
+    text-align: center;
+    width: 33%;
+}
+.linea_info{
+    width: 100%;
+    align-content: center;
+}
+.tarjeta{
+    display: inline-block;
+    margin: 11.5%;
+    margin-top: 50px;
+    justify-content: center;
+    align-items: center;
+
+}
+.titulo_tarjeta{
+   
+    text-align: center;
+    margin-top: 20px;
+    margin-left: 10%;
+}
+
