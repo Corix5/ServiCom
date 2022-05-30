@@ -1,0 +1,14 @@
+.formulario{
+    border-style: solid;
+    border-color: rgb(133, 128, 128);
+    width: 35%;
+    height: 500px;
+    display: inline-block;
+    margin-left: 10%;
+    margin-top: 20px;
+    
+}
+.area_bitacora{
+    background-color: rgb(238, 238, 238);
+    height: 600px;
+}
