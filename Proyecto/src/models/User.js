@@ -12,7 +12,7 @@ const userSchema = new Schema({
     phone: {type: Number, required: true, unique: true},
     password: {type: String, required: true},
     acknowledged: {type: Boolean},
-    photo: {type: String},
+    photo: { type: String},
     repository: {type: Array},
     curriculum: {type: String},
     personalDescription: {type: String},

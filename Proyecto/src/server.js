@@ -7,6 +7,19 @@ const flash = require("connect-flash");
 const session = require('express-session');
 // const { nextTick } = require('process');
 const passport = require('passport');
+// const multer = require('multer');
+
+// const storage = multer.diskStorage({
+//     destination: (req, file, cb) =>{
+//         cb(null, path.join(__dirname, 'public/img'));
+//     },
+//     filename: (req, file, cb) =>{
+//         cb(null, file.originalname);
+//     } 
+
+// });
+
+// const upload = multer({storage});
 
 //inicializaciones
 const app = express();
@@ -34,6 +47,11 @@ app.use(session({
 app.use(passport.initialize());
 app.use(passport.session());
 app.use(flash());
+
+// app.use(multer({
+//     storage,
+//     dest:path.join(__dirname, 'public/img')
+// }).single('photo'))
 
 //Variables Globales
 app.use((req, res, next) => {
