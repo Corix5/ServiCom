@@ -26,8 +26,9 @@
         <div id="myTabContent" class="tab-content">
           <div class="tab-pane fade active show" id="home">
             <ul>
-              <li><a href="{{users.repository}}"> GitHub </a></li>
-  
+              {{#each users.repository}}
+              <li><a href="{{this}}">{{this}}</a></li>
+               {{/each}}
             </ul>
           </div>
           <div class="tab-pane fade" id="profile">
