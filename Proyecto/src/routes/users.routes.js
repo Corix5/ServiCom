@@ -2,16 +2,20 @@ const {Router} = require('express');
 const path = require('path');
 const multer = require('multer');
 const router = Router();
+const upload = require('../server');
 
-const storage = multer.diskStorage({
-    destination: path.join(__dirname, 'public/img'),
-    filename: (req, file, cb) =>{
-        cb(null, file.originalname);
-    } 
+// const storage = multer.diskStorage({
+//     destination: path.join(__dirname,"public/img"),
+//     filename: (req, file, cb) =>{
+//         cb(null, file.originalname);
+//     } 
 
-});
+// });
 
-const upload = multer({storage});
+// const upload = multer({
+//     storage
+//     // dest: '../public/photo'
+// });
 
 const { renderSignUpForm, renderSigninForm, signin, signup, logout} = require('../controllers/users.controller')
 

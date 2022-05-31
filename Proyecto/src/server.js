@@ -7,19 +7,20 @@ const flash = require("connect-flash");
 const session = require('express-session');
 // const { nextTick } = require('process');
 const passport = require('passport');
-// const multer = require('multer');
+const multer = require('multer');
+const { urlToHttpOptions } = require('url');
 
-// const storage = multer.diskStorage({
-//     destination: (req, file, cb) =>{
-//         cb(null, path.join(__dirname, 'public/img'));
-//     },
-//     filename: (req, file, cb) =>{
-//         cb(null, file.originalname);
-//     } 
+const storage = multer.diskStorage({
+    destination: path.join(__dirname, 'public/img'),
+    filename: (req, file, cb) =>{
+        cb(null, file.originalname);
+    } 
 
-// });
+});
 
-// const upload = multer({storage});
+const upload = multer({storage});
+
+module.exports = upload;
 
 //inicializaciones
 const app = express();
