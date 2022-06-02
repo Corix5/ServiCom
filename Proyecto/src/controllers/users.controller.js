@@ -57,7 +57,15 @@ usersCtrl.signup = async (req, res) =>{
                 to: correo, // list of receivers
                 subject: "Bienvenido a ServiCom ✔", // Subject line
                 text: "Hello world?", // plain text body
-                html: `<b>Haz creado una cuenta en ServiCom, desde aquí podrás encontrar la vacante ideal para tu servicio social </b> `, // html body
+                html: `    <style> body{background-color: black;} </style>
+                <h1> <style>h1{color: white; text-align: center; font-family: monaco,Consolas,Lucida Console,monospace;}</style> Hola, bienvenid@ a ServiCom</h1>
+                <p class="texto"> <style>.texto{color: white; font-weight: bold; text-align: justify; padding-left: 10%; padding-right: 10%; font-family: monaco,Consolas,Lucida Console,monospace;}</style> Con tu cuenta personal podrás encontrar tu vacante ideal para tu servicio social, podrás terminar de 
+                    personalizar tu perfil si no lo has hecho. Sigue las recomendaciones del sitio para tener la mejor experiencia.
+                </p>
+            
+                <img class="img" src="https://coworkingfy.com/wp-content/uploads/2019/11/trabajo-en-equipo-grupo-figurativo-de-equipo-de-trabajo-1024x612.jpg" width="250px">
+            
+                <style> .img{margin-left: 10%; }</style>`, // html body
               });
             
               console.log("Message sent: %s", info.messageId);

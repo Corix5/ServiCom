@@ -14,9 +14,13 @@ function comprueba(){
       document.getElementById("selectorColor").style.borderColor = '#18222B';
       document.getElementById("selectorColor").style.color = 'white';
 
-      document.getElementById("msg").style.color = "white";
-      document.getElementById("label1").style.color = "white";
-      document.getElementById("label2").style.color = "white";
+      document.getElementById("msg").style.color = 'white';
+      document.getElementById("label1").style.color = 'white';
+      document.getElementById("label2").style.color = 'white';
+
+      document.getElementById("welcome").style.color = 'white';
+      document.getElementById("descripcionTexto").style.color = 'white';
+
   }else{
      console.log("false");
      document.body.style.backgroundColor = 'rgb(248, 248, 248)';
@@ -31,6 +35,9 @@ function comprueba(){
      document.getElementById("msg").style.color = "black";
      document.getElementById("label1").style.color = "black";
      document.getElementById("label2").style.color = "black";
+
+     document.getElementById("welcome").style.color = "black";
+     document.getElementById("descripcionTexto").style.color = "black";
   }
 };
 

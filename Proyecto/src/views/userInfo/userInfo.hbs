@@ -1,4 +1,4 @@
-<h2>Bienvenido {{users.name}} </h2>
+<h2 id="welcome"> Bienvenido {{users.name}} </h2>
 
       <div class="flex-container">
 
@@ -27,7 +27,7 @@
           <div class="tab-pane fade active show" id="home">
             <ul>
               {{#each users.repository}}
-              <li><a href="{{this}}">{{this}}</a></li>
+              <li><a href="{{this}}" target="_blank">{{this}}</a></li>
                {{/each}}
             </ul>
           </div>
@@ -36,7 +36,7 @@
           </div>
 
           <div class="tab-pane fade" id="description">
-            <p class="descripcion">{{users.personalDescription}}</p>
+            <p id="descripcionTexto" class="descripcion">{{users.personalDescription}}</p>
           </div>
         </div>
       </div>
