@@ -1,7 +1,9 @@
 const indexCtrl = {};
+const Vacante = require('../models/Vacante');
 
-indexCtrl.renderIndex = (req, res)=>{
-    res.render('index')
+indexCtrl.renderIndex = async (req, res)=>{
+    const vacantes = await Vacante.find().lean(); 
+    res.render('index',{vacantes})
 };
 
 

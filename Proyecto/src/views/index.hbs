@@ -45,7 +45,20 @@
                 <input type="hidden" name="_method" value="PUT">
               <button class="btn btn-primary">Aplicar</button>
               </form>
+ 
+        <div class="contenedorOfertas">
+          {{#each vacantes}}
+            <div class="oferta" id="{{_id}}">
+              <h3 class="titulo"> {{name}} </h3>
+              <p class="compania">{{company}}</p>
+              <p class="descripcion_oferta">{{description}}</p>
             </div>
+         {{/each}}
         </div>
-       
-      </main>
+
+
+         <div class="ofertasIframe">
+              <iframe src="/vacantes/cisco/plus" width="85%" height="750px" id="iframe"></iframe>
+          </div>
+        </main>
+        </div>
