@@ -74,7 +74,7 @@ app.use(require('./routes/recuperacion.routes'));
 app.use(require('./routes/email.routes'));
 app.use(require('./routes/userProfile.routes'));
 app.use(require('./routes/vacante.routes'));
-app.use(require('./routes/carrusel.routes'));
+app.use(require('./routes/aplicarVacante.routes'));
 
 //Archivos estaticos
 app.use(express.static(path.join(__dirname, 'public' )));
