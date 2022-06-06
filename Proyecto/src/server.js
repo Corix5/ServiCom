@@ -1,4 +1,5 @@
 const express = require('express');
+const hbs = require('hbs');
 const exphbs = require('express-handlebars');
 const res = require('express/lib/response');
 const path = require('path');
