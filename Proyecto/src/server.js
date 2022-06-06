@@ -18,7 +18,13 @@ const storage = multer.diskStorage({
 
 });
 
-const upload = multer({storage});
+
+const upload = multer({
+    storage,
+limits:{
+    fieldSize: 1062*624*3
+}});
+
 
 module.exports = upload;
 
@@ -48,11 +54,6 @@ app.use(session({
 app.use(passport.initialize());
 app.use(passport.session());
 app.use(flash());
-
-// app.use(multer({
-//     storage,
-//     dest:path.join(__dirname, 'public/img')
-// }).single('photo'))
 
 //Variables Globales
 app.use((req, res, next) => {

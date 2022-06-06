@@ -7,7 +7,7 @@
             <div class="card-body"></div>
 
             <div class="card-footer">
-                <form action="/userProfile/{{users._id}}?_method=PUT" method="POST">
+                <form action="/userProfile/{{users._id}}?_method=PUT" method="POST" enctype="multipart/form-data">
                     
                     <div class="form-group">
                         <input type="text" name="nombre" placeholder="Nombre" id="Nombre" class="form-control" autofocus>
@@ -39,7 +39,7 @@
                     </div>
                     <br>
                     <div class="form-group">
-                        <input type="email" name="correo" placeholder="Correo Institucional" id="Correo" class="form-control">
+                        <input type="email" name="correo" placeholder="Correo" id="Correo" class="form-control">
                     </div>
                     <br>
 
@@ -52,19 +52,23 @@
 
                     <label for="photo">Selecciona foto de perfil</label>
                     <br><br>
-                    <input type="file" name="photo" accept="image/png, image/jpeg">
+                    <input type="file" name="photo2" accept="image/png, image/jpeg">
                     <br><br>
 
                     <label for="profession">Agrega un titulo de tu descripción</label>
                     <br><br>
-                    <input type="text" placeholder="Ej: JR Web Developer" name="profession">
+                    <input type="text" placeholder="Ej: JR Web Developer" name="profession" class="form-control">
                     <br><br>
 
                     <label for="repository">Agrega algún link hacia tu portafolio</label>
                     <br><br>
 
-                    <input type="text" placeholder="Ej: Repositorios de GitHub" name="repository">
-                    <br><br>
+                    <input type="text" placeholder="Ej: Repositorios de GitHub" name="repository" class="form-control">
+                    
+                    <div id="containerPortafolio" class="newInput"></div>
+
+                    <button type="button" onclick="createInputPortafolio()">agregar</button>
+                    <br>
 
                     <label for="curriculum">Agrega tu curriculum</label>
                     <br><br>
@@ -75,7 +79,7 @@
                     <label for="personalDescription">Agrega un descripción personal</label>
                     <br><br>
 
-                    <input type="text" name="personalDescription" placeholder="Max 400 caracteres">
+                    <input type="text" name="personalDescription" placeholder="Max 400 caracteres" class="form-control">
   
                     <br><br>
                     <button class="btn btn-lg btn-primary"> <style> button{width: 100%;} </style> Actualizar perfil</button>
