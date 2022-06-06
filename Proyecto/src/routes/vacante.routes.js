@@ -7,6 +7,7 @@ router.get('/vacantes/add', renderVacanteForm);
 
 router.post('/vacantes/add', createVacante);
 
-router.get('/vacantes', renderVacante);
+//Lo que se debe borrar
+router.get('/vacantes/:id', renderVacante);
 
 module.exports = router;

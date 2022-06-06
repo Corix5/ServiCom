@@ -30,9 +30,11 @@ main h2{
 
 
 .contenedorOfertas{
-    background-color: white;
+    margin: 0;
+    max-width: 40%;
 }
 
+/*
 .oferta{
     margin-bottom: 20px;
     box-shadow: 2px 2px 1px 1px rgba(0, 46, 65, 0.164);
@@ -41,19 +43,20 @@ main h2{
     width: 80%;
     height: 200px;
 }
-
+*/
+/*
 .paginas{
     margin-left: 50%;
     transform: translateX(-50%);
 }
-
+*/
 
 /* estilos del contenido general */
 
 .main{
     display: flex;
     padding: 2%;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
 }
 
@@ -62,43 +65,80 @@ main h2{
 }
 
 .ofertasIframe{
-    width: 50%;
+    min-width: 45%;
 }
 
 #iframe{
     box-shadow: 2px -2px 5px 5px rgba(0, 46, 65, 0.164);
     border-radius: 10px;
+    width: 100%;
 }
 
-.descripcionCompleta{
+.oferta{
     box-shadow: 2px -2px 5px 5px rgba(0, 46, 65, 0.164);
     border-radius: 10px;
     padding: 15px;
     background-color: white;
-    max-width: 500px;
-    margin-left: 50px;
+    margin-bottom: 10%;
 }
 
+.oferta:hover{
+    box-shadow: 3px -3px 7px 7px rgba(104, 151, 179, 0.692);
+    cursor: pointer;
+    transition: box-shadow 0.3s ease-out;
+}
+
+.compania{
+    color: rgb(50, 50, 226);
+}
+
+.descripcion_oferta{
+    text-align: justify;
+    font-weight: 200;
+}
+
+.contenedorOferta{
+    display: flex;
+}
+
+.ofertaCompleta{
+    width: 100%;
+}
+
+
 @media (max-width: 1100px){
+    .main{
+        justify-content: center;
+    }
+    .contenedorOfertas{
+        min-width: 60%;
+    }
+
+    .oferta{
+        width: 100%;
+    }
+    /*
     .descripcionCompleta{
         display: none;
     }
+    */
 
+    /*
     .contenedorOfertas{
         margin-left: 50%;
         transform: translateX(-50%);
     }
-
+*/
     .ofertasIframe{
-        width: 800px;
+        display: none;
     }
 }
 
 @media (max-width: 600px){
-
-    .oferta{
-        width: 250px;
+    .contenedorOfertas{
+        min-width: 100%;
     }
+
 }
 
 .prueba{
