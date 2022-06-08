@@ -1,7 +1,30 @@
-const bitacoracreateCtrl = {};
+const bitacoraCtrl = {};
  
-bitacoracreateCtrl.renderBitacoracreate = (req, res) =>{
-    res.render("bitacora/bitacoraform");
+bitacoraCtrl.renderBitacoracreate = (req, res) =>{
+    res.render('bitacora/bitacoraform');
 }
 
-module.exports = bitacoracreateCtrl;
+bitacoraCtrl.createBitacora = (req, res) =>{
+    console.log(req.body);
+    res.send('Crea nueva bitacora.');
+}
+
+bitacoraCtrl.renderListBitacoras = (req ,res) =>{
+    res.send('Lista de bitacoras.');
+} 
+
+bitacoraCtrl. renderEditBitacora = (req , res) => {
+    res.send('formulario Editar Bitacora');
+}
+
+bitacoraCtrl.updateBitacora = (req, res) =>{
+    res.send('Actualizar bitacora');
+}
+
+bitacoraCtrl.deleteBitacora = (req, res) =>{
+    res.send('Eliminar bitacora');
+}
+
+ 
+
+module.exports = bitacoraCtrl;
