@@ -37,3 +37,13 @@ function createInputBenefits(){
     input.placeholder = "Beneficios";
     container.appendChild(input);
 }
+
+function createInputBitAct(){
+    let container = document.getElementById("containerBitacora");
+    let input = document.createElement("input");
+    input.type = "text";
+    input.name = "actBitacora";
+    input.className = "form-control newInput";
+    input.placeholder = "Actividad";
+    container.appendChild(input);
+}
