@@ -87,7 +87,7 @@ usersCtrl.renderSigninForm = async (req, res) => {
 
 usersCtrl.signin = passport.authenticate('local', {
     failureRedirect: '/users/signin',
-    successRedirect: '/userInfo',
+    successRedirect: '/user/userInfo',
     failureFlash: true
 });
 
