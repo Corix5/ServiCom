@@ -5,9 +5,9 @@ const router = Router();
 
 const { renderUserProfileForm, completeProfile} = require('../controllers/userProfile.controller')
 
-router.get('/user/userProfile/:id', renderUserProfileForm);
+router.get('/userProfile/:id', renderUserProfileForm);
 
-router.put('/user/userProfile/:id', upload.single('photo2'),completeProfile);
+router.put('/userProfile/:id', upload.single('photo2'),completeProfile);
 
 
 module.exports = router;
