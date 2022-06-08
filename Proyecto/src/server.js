@@ -68,6 +68,7 @@ app.use((req, res, next) => {
 // next();
 //Rutas
 app.use(require('./routes/index.routes'));
+app.use(require('./routes/carrusel.routes'));
 app.use(require('./routes/users.routes'));
 app.use(require('./routes/userInfo.routes'));
 app.use(require('./routes/recuperacion.routes'));
@@ -75,7 +76,7 @@ app.use(require('./routes/email.routes'));
 app.use(require('./routes/userProfile.routes'));
 app.use(require('./routes/vacante.routes'));
 app.use(require('./routes/aplicarVacante.routes'));
-app.use(require('./routes/carrusel.routes'));
+app.use(require('./routes/vacanteIframeAux.routes'));
 app.use(require('./routes/bitacora.routes'));
 
 //Archivos estaticos

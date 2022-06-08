@@ -1,9 +1,35 @@
        <div class="contenedorOferta"> 
           
         <div class="ofertaCompleta">
-            <h3 class="titulo"> {{name}} </h3>
-            <p class="descripcion_oferta">{{completeDescription}}</p>
-         
+            <h1 class="tituloVacante"> {{this.name}} </h1>
+            <p class="companiaVacante">{{this.company}}</p>
+            <p class="descripcion_Vacante">{{this.completeDescription}}</p>
+            
+            <h2 class="tituloSeccionVacante">Beneficios</h2>
+
+            <ul class="listaVacante">
+            {{#each benefits}}
+                <li class="itemListaVacante">{{this}}</li>
+            {{/each}}
+            </ul>
+
+            <h2 class="tituloSeccionVacante">Actividades</h2>
+
+            <ul class="listaVacante">
+            {{#each activities}}
+                <li class="itemListaVacante">{{this}}</li>
+            {{/each}}
+            </ul>
+
+
+            <h2 class="tituloSeccionVacante">Actividades que NO son tu responsabilidad</h2>
+
+            <ul class="listaVacante">
+            {{#each noActivities}}
+                <li class="itemListaVacante">{{this}}</li> 
+            {{/each}}
+            </ul>
+
          </div> 
         </div>
 

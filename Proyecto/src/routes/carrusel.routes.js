@@ -3,5 +3,5 @@ const router = Router();
 
 const {renderCarrusel} = require('../controllers/carrusel.controller');
 
-router.get('/carrusel', renderCarrusel);
+router.get('/principal/carrusel', renderCarrusel);
 module.exports = router;

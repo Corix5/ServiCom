@@ -4,19 +4,35 @@
         <hr>
       </div>
 
+
+ <!-- Filtros que se despliegan
       <div class="selector">
       <select id="selectorColor" class="form-select" aria-label="Default select example">
         <option selected>Áreas de especialización</option>
-        <option value="1">Web Development</option>
-        <option value="2">Big Data</option>
-        <option value="3">Software Engineering</option>
-        <option value="4">Artificial Intelligence</option>
-        <option value="5">Design Thinking</option>
-        <option value="6">Mobile Services</option>
-        <option value="7">Cybersecurity</option>
+        <option value="1" class="opciones"><a href="/Web Development"></a>Web Development</a></option>
+        <option value="2" class="opciones"><a href="/Big Data">Big Data</a></option>
+        <option value="3" class="opciones"><a href="/Software Engineering">Software Engineering</a></option>
+        <option value="4" class="opciones"><a href="/Artificial Intelligence">Artificial Intelligence</a></option>
+        <option value="5" class="opciones"><a href="/Design Thinking">Design Thinking</a></option>
+        <option value="6" class="opciones"><a href="/Mobile Services">Mobile Services</a></option>
+        <a href="/Cybersecurity">Cybersecurity</a>
       </select>
     </div>
-    
+    -->
+
+    <h2>Selecciona el área que te interesa</h2>
+    <div class="list-group">
+      <a href="/Web Development" class="list-group-item list-group-item-action">Web Development</a>
+      <a href="/Big Data" class="list-group-item list-group-item-action">Big Data</a>
+      <a href="/Software Engineering" class="list-group-item list-group-item-action">Software Engineering</a>
+      <a href="/Artificial Intelligence" class="list-group-item list-group-item-action">Artificial Intelligence</a>
+      <a href="/Design Thinking" class="list-group-item list-group-item-action">Design Thinking</a>
+      <a href="/Mobile Services" class="list-group-item list-group-item-action">Mobile Services</a>
+      <a href="/Cybersecurity" class="list-group-item list-group-item-action">Cybersecurity</a>
+    </div>
+
+
+  <!--
     <div class="form-check form-switch filtro">
       <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault">
       <label id="label1" class="form-check-label" for="flexSwitchCheckDefault">Mostrar solo ofertas recientes</label>
@@ -26,10 +42,11 @@
       <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckChecked" checked>
       <label id="label2" class="form-check-label" for="flexSwitchCheckChecked">Mostrar solo ofertas con más de un candidato</label>
     </div>
+-->
       <hr id="hr1">
       <main> 
 
-        <h2 id="title">Ofertas recientes</h2>
+        <h2 id="title">Ofertas para <span style="color: rgb(16, 71, 221);">{{vacantes.[0].speciality}}</span></h2>
         <hr id="hr2">
         <div class="main">
           {{!-- <div class="ofertasIframe">
@@ -58,7 +75,7 @@
 
 
          <div class="ofertasIframe">
-              <iframe src="/vacantes/cisco/plus" width="85%" height="750px" id="iframe"></iframe>
+              <iframe src="/vacante/vacanteIframeAux" width="85%" height="750px" id="iframe"></iframe>
           </div>
         </main>
         </div>
