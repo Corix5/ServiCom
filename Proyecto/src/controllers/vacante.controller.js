@@ -20,7 +20,7 @@ vacanteCtrl.renderVacante = async (req, res)=>{
    // var id = req.params.compania;
     var query = {_id :new ObjectID(req.params.id)}
     const vacantes = await Vacante.findOne(query); 
-    res.render('vacante/vacantes', vacantes);
+    res.render('vacante/vacante', vacantes);
 };
 
 module.exports = vacanteCtrl;

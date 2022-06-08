@@ -80,6 +80,7 @@ app.use(require('./routes/vacante.routes'));
 app.use(require('./routes/aplicarVacante.routes'));
 app.use(require('./routes/vacanteIframeAux.routes'));
 app.use(require('./routes/bitacora.routes'));
+app.use(require('./routes/vervacantes.routes'));
 
 //Archivos estaticos
 app.use(express.static(path.join(__dirname, 'public' )));

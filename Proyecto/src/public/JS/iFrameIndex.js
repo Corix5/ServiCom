@@ -5,9 +5,9 @@ document.querySelectorAll('.oferta').forEach(item => {
     item.addEventListener('click', event => {
       var id = item.id;
       if(anchoVentana>1100){
-      iFrameI.setAttribute('src','/vacantes/'+id);
+      iFrameI.setAttribute('src','/vacante/'+id);
       }else{
-        window.location.href = "/vacantes/"+id;
+        window.location.href = "/vacante/"+id;
       }
     })
 })

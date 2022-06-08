@@ -1,81 +1,82 @@
-<div id="msgArea" class="leyenda">
-        <a href="/users/signup">Crea tu perfil</a>
-        <p id="msg"> Con tu perfil encuentra tu vacante ideal</p>
-        <hr>
-      </div>
-
-
- <!-- Filtros que se despliegan
-      <div class="selector">
-      <select id="selectorColor" class="form-select" aria-label="Default select example">
-        <option selected>Áreas de especialización</option>
-        <option value="1" class="opciones"><a href="/Web Development"></a>Web Development</a></option>
-        <option value="2" class="opciones"><a href="/Big Data">Big Data</a></option>
-        <option value="3" class="opciones"><a href="/Software Engineering">Software Engineering</a></option>
-        <option value="4" class="opciones"><a href="/Artificial Intelligence">Artificial Intelligence</a></option>
-        <option value="5" class="opciones"><a href="/Design Thinking">Design Thinking</a></option>
-        <option value="6" class="opciones"><a href="/Mobile Services">Mobile Services</a></option>
-        <a href="/Cybersecurity">Cybersecurity</a>
-      </select>
-    </div>
-    -->
-
-    <h2>Selecciona el área que te interesa</h2>
-    <div class="list-group">
-      <a href="/Web Development" class="list-group-item list-group-item-action">Web Development</a>
-      <a href="/Big Data" class="list-group-item list-group-item-action">Big Data</a>
-      <a href="/Software Engineering" class="list-group-item list-group-item-action">Software Engineering</a>
-      <a href="/Artificial Intelligence" class="list-group-item list-group-item-action">Artificial Intelligence</a>
-      <a href="/Design Thinking" class="list-group-item list-group-item-action">Design Thinking</a>
-      <a href="/Mobile Services" class="list-group-item list-group-item-action">Mobile Services</a>
-      <a href="/Cybersecurity" class="list-group-item list-group-item-action">Cybersecurity</a>
-    </div>
-
-
-  <!--
-    <div class="form-check form-switch filtro">
-      <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault">
-      <label id="label1" class="form-check-label" for="flexSwitchCheckDefault">Mostrar solo ofertas recientes</label>
-    </div>
-
-    <div class="form-check form-switch filtro">
-      <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckChecked" checked>
-      <label id="label2" class="form-check-label" for="flexSwitchCheckChecked">Mostrar solo ofertas con más de un candidato</label>
-    </div>
--->
-      <hr id="hr1">
-      <main> 
-
-        <h2 id="title">Ofertas para <span style="color: rgb(16, 71, 221);">{{vacantes.[0].speciality}}</span></h2>
-        <hr id="hr2">
-        <div class="main">
-          {{!-- <div class="ofertasIframe">
-            <iframe src="/vacantes" width="85%" height="750px" id="iframe"></iframe>
-          </div>
-  
-            <div class="descripcionCompleta">
-              <h3>UI/UX Design Specialist</h3>
-              <p>Buscamos candidato para servicio social especialista en UI/UX</p>
-              <iframe src="/html/contenidoOferta.html" frameborder="0" width="100%" height="550px"></iframe>
-                <hr>
-                <form action="/vacanteAceptada?_method=PUT" method="POST">
-                <input type="hidden" name="_method" value="PUT">
-              <button class="btn btn-primary">Aplicar</button>
-              </form> --}}
- 
-        <div class="contenedorOfertas">
-          {{#each vacantes}}
-            <div class="oferta" id="{{_id}}">
-              <h3 class="titulo"> {{name}} </h3>
-              <p class="compania">{{company}}</p>
-              <p class="descripcion_oferta">{{description}}</p>
+        <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
             </div>
-         {{/each}}
-        </div>
-
-
-         <div class="ofertasIframe">
-              <iframe src="/vacante/vacanteIframeAux" width="85%" height="750px" id="iframe"></iframe>
+            <div class="carousel-inner">
+              <div class="carousel-item active" data-bs-interval="10000">
+                <img src="/img/escom.jpg" class="d-block w-100 carousel_img" alt="escom">
+                <div class="carousel-caption d-none d-md-block">
+                  <h5><font color = "White">ESCUELA SUPERIOR DE CÓMPUTO (1994)</font></h5>
+                  <p><font color = "White">Entre 1993 y 1994 la ESCOM abrio sus puertas a los alumnos</font></p>
+                  <p><font color = "White">que deseaban adquirir conocimientos en sistemas computacionales.</font></p>
+                </div>
+              </div>
+              <div class="carousel-item" data-bs-interval="5000">
+                <img src="/img/mujeresescom.jpg" class="d-block w-100 carousel_img" alt="mujeresescom">
+                <div class="carousel-caption d-none d-md-block">
+                  <h5><font color = "White">8 Marzo</font></h5>
+                  <p><font color = "White">Por que aunque somos menos, hacemos mas. #MUJER#ESCOM#8M</font></p>
+                </div>
+              </div>
+              <div class="carousel-item" data-bs-interval="6000">
+                <img src="/img/escomtop.jpg" class="d-block w-100 carousel_img" alt="escomtop">
+                <div class="carousel-caption d-none d-md-block">
+                  <h5><font color = "White">ESCUELA SUPERIOR DE COMPUTO (2021)</font></h5>
+                  <p><font color="White">Con instalaciones para que nuestros estudiantes puedan alcanzar sus metas en al area</font></p>
+                  <p><font color="White">de sistemas computacionales.</font></p>
+                </div>
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
           </div>
-        </main>
-        </div>
+          <br>
+          <br>
+
+          
+       
+      </main>
+      <table class="tabla_titulo">
+        <tr>
+          <td class="columna_titulo"><hr size= 5></td>
+          <td class="columna_titulo"><h3>INFORMACIÓN</h3></td>
+          <td class="columna_titulo"><hr size= 5></td>
+        </tr>
+      </table>
+      <br>
+      <div class="linea_info">
+        <a href="/" style="color:#000000;"><div class = "tarjeta">
+          <div class="imagen_tarjeta">
+            <img src="/img/google-docs.png">
+          </div>
+          <div class="titulo_tarjeta">
+            <h5>Vacantes para servicio social</h5>
+          </div>
+        </div></a>
+        <a href="https://serviciosocial.ipn.mx/infoServSoc/RequisitosServSocial.do;jsessionid=D23DF8AF6AEEA5A9C6A9FDEB5E0F3E12" target="_blank" style="color:#000000;">
+          <div class = "tarjeta">
+          <div class="imagen_tarjeta">
+            <img src="/img/comprobar.png" >
+          </div>
+          <div class="titulo_tarjeta">
+            <h5>Requisitos de servicio social</h5>
+          </div>
+        </div></a>
+        <a href="https://www.escom.ipn.mx/" target="_blank" style="color:#000000;">
+          <div class = "tarjeta">
+          <div class="imagen_tarjeta">
+            <img src="/img/sombrero-de-graduacion.png">
+          </div>
+          <div class="titulo_tarjeta">
+            <h5>ESCOM</h5>
+          </div>
+        </div></a>
+      </div>
