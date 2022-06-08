@@ -1,7 +1,7 @@
 const bitacoracreateCtrl = {};
  
 bitacoracreateCtrl.renderBitacoracreate = (req, res) =>{
-    res.render("bitacora/bitacora");
+    res.render("bitacora/bitacoraform");
 }
 
 module.exports = bitacoracreateCtrl;
