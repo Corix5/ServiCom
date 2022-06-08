@@ -4,8 +4,8 @@ const router = Router();
 
 const{renderBitacoracreate} = require('../controllers/bitacora.controller');
 
-router.get('/bitacora', renderBitacoracreate);
+router.get('/principal/bitacora', renderBitacoracreate);
 
-router.post('/bitacora',);
+router.post('/principal/bitacora',);
 
 module.exports = router;
