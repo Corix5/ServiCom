@@ -1,11 +1,16 @@
 const bitacoraCtrl = {};
+
+const bitacora = require('../models/bitacora');
  
 bitacoraCtrl.renderBitacoracreate = (req, res) =>{
     res.render('bitacora/bitacoraform');
 }
 
-bitacoraCtrl.createBitacora = (req, res) =>{
-    console.log(req.body);
+bitacoraCtrl.createBitacora = async (req, res) =>{
+    const{fecha,hrsCum,actBitacora}=req.body;
+    const newbitacora = new bitacora({fecha:fecha , hrscum: hrsCum,acti: actBitacora});
+    await newbitacora.save();
+    console.log(newbitacora);
     res.send('Crea nueva bitacora.');
 }
 
