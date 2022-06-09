@@ -1,0 +1,28 @@
+<p>Bienvenid@ escribe las actividades que realizaras en los próximos días {{idGenerado.id}}</p>
+<div class="area_bitacora">
+        <div class="formulariobitacora">
+            <div class="card-footer">
+                <form action="/agenda-create/{{idGenerado.id}}" method="POST">
+                    
+                    <div class="form-group">
+                        <label>Fecha:</label>
+                        <input type="date" name="fecha" id="Fecha" class="form-control" autofocus>
+                    </div>
+                    <br>
+
+                    <div class="form-group">
+                    <label>Actividades realizadas:</label>
+                        <input type="text"   placeholder = "Actividad" name="actBitacora" class="form-control">
+                        <div id="containerBitacora" class="newInput"></div>
+                       <button type="button" onclick="createInputBitAct()">Agregar</button>
+
+                    </div>
+                    <br>
+                    <div class="form-group">
+                    <button class="btn btn-lg btn-primary"> <style> button{width: 100%;} </style> Registrar</button>
+                    </div>
+                    </form>
+        </div>
+       </div>
+
+       </div>

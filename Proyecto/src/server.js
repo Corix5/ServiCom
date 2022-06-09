@@ -84,6 +84,7 @@ app.use(require('./routes/bitacora.routes'));
 app.use(require('./routes/vervacantes.routes'));
 app.use(require('./routes/codigoQR.routes'));
 app.use(require('./routes/userInfoPub.routes'));
+app.use(require('./routes/agenda.routes'));
 
 //Archivos estaticos
 app.use(express.static(path.join(__dirname, 'public' )));
