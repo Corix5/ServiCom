@@ -16,7 +16,9 @@ const userSchema = new Schema({
     repository: {type: Array},
     curriculum: {type: String},
     personalDescription: {type: String},
-    profession: {type: String}
+    profession: {type: String},
+    calendar: {type: String}
+
 }, {
     timestamps: true
 });
