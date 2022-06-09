@@ -11,7 +11,7 @@ bitacoraCtrl.createBitacora = async (req, res) =>{
     const newbitacora = new bitacora({fecha:fecha , hrscum: hrsCum,acti: actBitacora});
     await newbitacora.save();
     console.log(newbitacora);
-    res.send('Crea nueva bitacora.');
+    res.send("Crea bitacora");
 }
 
 bitacoraCtrl.renderListBitacoras = async (req ,res) =>{

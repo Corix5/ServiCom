@@ -1,22 +1,31 @@
 <h2>Bitacoras</h2>
-<br>
 <div class="row">
     {{#each bitacoras}}
         <div class="col-md-3">
             <div class="card">
                 <div class="card-body">
-                    <h4>{{fecha}}</h4>
-                    <h4>{{hrscum}}</h4>
+                    <h4 class= "card-title d-flex justify-content-between aling-items-center">
+                        {{fecha}} <a href="/principal/bitacora/edit/{{_id}}"><i class="fas fa-edit"></i></a>
+                        </h4>
+                    <p>Horas cumplidas: {{hrscum}}</p>
 
                     <!-- Arreglo junto-->
                     <!-- Las actividades se separan por comas, todas en un elememento html-->
-                    <h4>{{acti}}</h4>
+                    
 
                     <!-- Arreglo separado-->
                     <!-- Para que  estén separadas las actividades, una en cada elemento html-->
                     {{#each acti}}
-                        <h4>{{this}}</h4>
+                        <ul>
+                        <li>{{this}}</li>
+                        </ul>
                     {{/each}}
+                    <form action="/principal/bitacora/delete/{{_id}}?_method=delete" method="POST">
+                        <input type="hidden" name="_method" value="delete">
+                        <button type="submit" class="btn btn-danger btn-block btn-sm">
+                            Borrar
+                        </button>
+                    </form>
                 </div>
             </div>
         </div>
