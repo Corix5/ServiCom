@@ -15,7 +15,7 @@ bitacoraCtrl.createBitacora = async (req, res) =>{
 }
 
 bitacoraCtrl.renderListBitacoras = async (req ,res) =>{
-    const bitacoras = await bitacora.find();
+    const bitacoras = await bitacora.find().lean();
     res.render('bitacora/bitacoralist', {bitacoras});
 
 } 

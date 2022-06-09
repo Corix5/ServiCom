@@ -5,8 +5,18 @@
         <div class="col-md-3">
             <div class="card">
                 <div class="card-body">
-                    <h4>{{this}}</h4>
+                    <h4>{{fecha}}</h4>
+                    <h4>{{hrscum}}</h4>
 
+                    <!-- Arreglo junto-->
+                    <!-- Las actividades se separan por comas, todas en un elememento html-->
+                    <h4>{{acti}}</h4>
+
+                    <!-- Arreglo separado-->
+                    <!-- Para que  estén separadas las actividades, una en cada elemento html-->
+                    {{#each acti}}
+                        <h4>{{this}}</h4>
+                    {{/each}}
                 </div>
             </div>
         </div>

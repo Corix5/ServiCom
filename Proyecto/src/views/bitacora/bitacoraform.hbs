@@ -1,7 +1,8 @@
+<p id="{{id}}">Bienvenid@ escribe las actividades que realizaste el dia de hoy {{id}}</p>
 <div class="area_bitacora">
         <div class="formulariobitacora">
             <div class="card-footer">
-                <form action="/principal/bitacora-create" method="POST">
+                <form action="/principal/bitacora-create/{{id}}" method="POST">
                     
                     <div class="form-group">
                         <label>Fecha:</label>

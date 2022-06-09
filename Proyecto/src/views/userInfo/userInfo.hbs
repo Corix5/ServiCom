@@ -32,7 +32,7 @@
             </ul>
           </div>
           <div class="tab-pane fade" id="profile">
-           <a href="/Docs/Curriculum JR Web Developer.pdf" target="_blank"><button class="btn btn-lg btn-primary Curriculum" type="button">Mi Curriculum</button></a> 
+           <a href="{{users.curriculum}}" target="_blank"><button class="btn btn-lg btn-primary Curriculum" type="button">Mi Curriculum</button></a> 
           </div>
 
           <div class="tab-pane fade" id="description">
@@ -42,8 +42,7 @@
       </div>
 
       <div class="calendario">
-        <iframe class="iframe" src="https://calendar.google.com/calendar/embed?src=luisdavid202075%40gmail.com&ctz=America%2FMexico_City" style="border: 0" width="600" height="600" frameborder="0" scrolling="no"></iframe> 
-
+        <iframe class="iframe" src="https://calendar.google.com/calendar/embed?src=luisdavid202075%40gmail.com&ctz=America%2FMexico_City" style="border: 0" width="600" height="600" frameborder="0" scrolling="no"></iframe>
       </div>
     </div>
 
@@ -52,3 +51,9 @@
       <a href="/principal/bitacora" target="_blank"><button class="btn btn-lg btn-primary" type="button">Bitacora</button></a> 
       </div>
     {{/if}}
+
+  <form action="/principal/bitacora/{{users._id}}">
+    <input type="submit" value="Go to Google" />
+</form>
+
+    
