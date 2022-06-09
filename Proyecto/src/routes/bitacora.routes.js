@@ -11,7 +11,7 @@ router.post('/principal/bitacora-create',createBitacora); // Recibir datos desde
 
 //Obtener todas las bitacoras
 
-router.get('/principal/bitacora/verbitacoras', renderListBitacoras); 
+router.get('/principal/bitacora/listbitacoras', renderListBitacoras); 
 
 //Editar todas las notas
 

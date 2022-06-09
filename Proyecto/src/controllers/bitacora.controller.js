@@ -14,8 +14,10 @@ bitacoraCtrl.createBitacora = async (req, res) =>{
     res.send('Crea nueva bitacora.');
 }
 
-bitacoraCtrl.renderListBitacoras = (req ,res) =>{
-    res.send('Lista de bitacoras.');
+bitacoraCtrl.renderListBitacoras = async (req ,res) =>{
+    const bitacoras = await bitacora.find();
+    res.render('bitacora/bitacoralist', {bitacoras});
+
 } 
 
 bitacoraCtrl. renderEditBitacora = (req , res) => {
