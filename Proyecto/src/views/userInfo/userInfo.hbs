@@ -46,14 +46,15 @@
       </div>
     </div>
 
+    <div class="flex-container">
+      <button id="botonQR" data-id="{{users._id}}" class="boton_qr">Código QR</button>
+    </div>
+
     {{#if users.acknowledged}}
     <div class="bitacora">
       <a href="/principal/bitacora" target="_blank"><button class="btn btn-lg btn-primary" type="button">Bitacora</button></a> 
       </div>
     {{/if}}
 
-  <form action="/principal/bitacora/{{users._id}}">
-    <input type="submit" value="Go to Google" />
-</form>
 
     

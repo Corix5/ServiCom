@@ -1,0 +1,41 @@
+.div_codigo{
+    display: flex; 
+    justify-content: center; 
+    align-items: center;
+    flex-flow: column;
+}
+
+#img_codigo{
+    width: 40%;
+}
+
+.let_codigo{
+    font-size: 3rem;
+}
+
+
+.boton_qr{
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    padding: 16px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+    cursor: pointer;
+}
+
+.boton_qr {
+    background-color: white; 
+    color: black; 
+    border: 2px solid #008CBA;
+}
+
+.boton_qr:hover {
+    background-color: #008CBA;
+    color: white;
+}

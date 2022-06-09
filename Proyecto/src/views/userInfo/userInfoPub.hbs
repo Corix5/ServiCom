@@ -1,0 +1,42 @@
+<h2 id="welcome">Conoce a {{name}} </h2>
+
+      <div class="flex-container">
+
+        <div class="imagen">
+          <img src="/img/{{photo}}" alt="">
+          <div class="infoImagen">
+            <p> {{profession}} </p>
+            <p class="blockquote-footer">Correo: {{email}} </p>
+            <p class="blockquote-footer">Telefono: {{phone}} </p>
+          </div>
+        </div>
+
+      <div class="menu">
+        <ul class="nav nav-tabs">
+          <li class="nav-item">
+            <a class="nav-link active" data-bs-toggle="tab" href="#home">Portafolio</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" data-bs-toggle="tab" href="#profile">Curriculum</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" data-bs-toggle="tab" href="#description">Descripción Personal</a>
+          </li>
+        </ul>
+        <div id="myTabContent" class="tab-content">
+          <div class="tab-pane fade active show" id="home">
+            <ul>
+              {{#each repository}}
+              <li><a href="{{this}}" target="_blank">{{this}}</a></li>
+               {{/each}}
+            </ul>
+          </div>
+          <div class="tab-pane fade" id="profile">
+           <a href="{{curriculum}}" target="_blank"><button class="btn btn-lg btn-primary Curriculum" type="button">Mi Curriculum</button></a> 
+          </div>
+
+          <div class="tab-pane fade" id="description">
+            <p id="descripcionTexto" class="descripcion">{{personalDescription}}</p>
+          </div>
+        </div>
+      </div>
