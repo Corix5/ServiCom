@@ -25,11 +25,26 @@ agendaCtrl.createAgenda = async (req, res) =>{
 
 agendaCtrl.verAgendas = async (req, res) =>{
    const id = req.params.id;
-
    const hoy = new Date();
-   const fecha =hoy.getFullYear()+"-0"+(hoy.getMonth()+1)+"-0"+hoy.getDate();
-   const agendas = await agenda.find({$and:[{alumnoId:id},{fecha:fecha}]});
 
+   var mes;
+   var dia;
+   
+   if(hoy.getMonth()>8){
+      mes=(hoy.getMonth()+1);
+   }else{
+      mes="0"+(hoy.getMonth()+1);
+   }
+
+   if(hoy.getDate()>9){
+      dia=hoy.getDate();
+   }else{
+      dia="0"+hoy.getDate();
+   }
+
+   const fechaf =hoy.getFullYear()+"-"+mes+"-"+dia;
+   const query = {alumnoId: id,fecha: fechaf};
+   const agendas = await agenda.find(query).lean();
    res.render('agenda/agendas',{agendas});
 };
 

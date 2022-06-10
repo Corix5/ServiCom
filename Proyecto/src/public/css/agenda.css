@@ -1,0 +1,10 @@
+.agendaLectura{
+    justify-content: space-around;
+}
+
+#textoAgenda,#textoFecha{
+    padding: 3%;
+    text-align: center;
+    border-right: solid 2px rgb(13, 15, 141);
+}
+
