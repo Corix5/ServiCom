@@ -9,8 +9,6 @@ const{renderBitacoracreate,
      updateBitacora, 
      deleteBitacora} = require('../controllers/bitacora.controller');
 
-const isAuthenticated=require('../helpers/auth');
-
 
 //new note
 router.get('/principal/bitacora', renderBitacoracreate); // obetener algo del servidor

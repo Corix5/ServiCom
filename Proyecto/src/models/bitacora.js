@@ -4,7 +4,7 @@ const bitacoraSchema = new Schema({
     fecha:{type:String},
     hrscum:{type:String},
     acti:{type:Array},
-    user:{type:String,required:true}    
+    User:{type:String}
 },{
     timestamps: true
 });

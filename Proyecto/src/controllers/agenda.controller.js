@@ -18,7 +18,7 @@ agendaCtrl.createAgenda = async (req, res) =>{
     const newagenda = new agenda({alumnoId: id,fecha:fecha , acti: actBitacora});
     await newagenda.save();
  //   console.log(newbitacora);
-    res.send("Agenda creada");
+ res.redirect('/agendaForm/:id');
  // res.render('index');
 };
 

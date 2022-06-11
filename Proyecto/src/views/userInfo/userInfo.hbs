@@ -1,4 +1,4 @@
-<h2 id="welcome"> Bienvenido {{users.name}} </h2>
+<h2 id="welcome"> ¡Bienvenido {{users.name}}!  </h2>
 
       <div class="flex-container">
 
@@ -44,24 +44,21 @@
       <div class="calendario">
         <iframe class="iframe" src="https://calendar.google.com/calendar/embed?src={{users.calendar}}%40gmail.com&ctz=America%2FMexico_City" style="border: 0" width="600" height="600" frameborder="0" scrolling="no"></iframe>
       </div>
+      
     </div>
 
     <div class="flex-container">
-      <button id="botonQR" data-id="{{users._id}}" class="boton_qr">Código QR</button>
-    </div>
+      <button class="btn btn-lg btn-secondary btninfouser" id="botonQR" data-id="{{users._id}}" class="boton_qr">Código QR</button>
+    
+      <button class="btn btn-lg btn-secondary btninfouser" id="botonAgenda" data-id="{{users._id}}" class="boton_qr">Inserta algo en tu agenda</button>
 
-    <div class="flex-container">
-      <button id="botonAgenda" data-id="{{users._id}}" class="boton_qr">Inserta algo en tu agenda</button>
-    </div>
-
-    <div class="flex-container">
-      <button id="botonAgendas" data-id="{{users._id}}" class="boton_qr">Ver agenda</button>
+      <button  class="btn btn-lg btn-secondary btninfouser"id="botonAgendas" data-id="{{users._id}}" class="boton_qr">Ver agenda</button>
     </div>
 
 
     {{#if users.acknowledged}}
-    <div class="bitacora">
-      <a href="/principal/bitacora" target="_blank"><button class="btn btn-lg btn-primary" type="button">Bitacora</button></a> 
+    <div class="bitacora flex-container">
+      <a href="/principal/bitacora"><button class="btn btn-lg btn-secondary" type="button">Bitacora</button></a> 
       </div>
     {{/if}}
 
