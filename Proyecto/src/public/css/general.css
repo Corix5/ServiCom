@@ -3,6 +3,11 @@
 }
 
 body{
+    background: linear-gradient(rgba(13, 44, 219,0.8), rgba(63, 86, 189, 0.3));
+  /*  background: linear-gradient(to right, rgba(63, 86, 189, 0.3), rgba(13, 44, 219,0.8));*/
+  }
+
+body{
     position: relative;
     padding-bottom: 10em;
     min-height: 100vh;
@@ -110,4 +115,8 @@ h2{
 
 .descripcion-perfil{
     background-color: rgb(255,255,255);
+}
+
+.flex-container{
+    background: rgba(3, 3, 3, 0.5);
 }

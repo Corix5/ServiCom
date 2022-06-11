@@ -1,8 +1,14 @@
-/* estilos del iframe de ofertas */
-
+/*
 body{
-    background: linear-gradient( #1cb5e0,#000046);
+  /*  background: linear-gradient( #1cb5e0,#000046);
+  background: linear-gradient(to right, rgba(63, 86, 189, 0.3), rgba(13, 44, 219,0.8));
+
 }
+
+.flex-container{
+    background: rgba(1, 1, 1, 0.3);
+}*/
+
 
 #bodyOf{
     background-color: white;
