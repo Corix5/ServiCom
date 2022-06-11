@@ -1,6 +1,6 @@
-<h2 id="welcome"> ¡Bienvenido {{users.name}}!  </h2>
+<h2 id="welcome"> <span style="color: rgb(255, 255, 255);"> ¡Bienvenido {{users.name}}! </span>  </h2>
 
-      <div class="flex-container">
+      <div class="flex-container descripcion-perfil">
 
         <div class="imagen">
           <img src="/img/{{users.photo}}" alt="">
@@ -47,18 +47,18 @@
       
     </div>
 
-    <div class="flex-container">
-      <button class="btn btn-lg btn-secondary btninfouser" id="botonQR" data-id="{{users._id}}" class="boton_qr">Código QR</button>
+    <div class="flex-container descripcion-perfil">
+      <button class="btn btn-lg btn-primary btninfouser" id="botonQR" data-id="{{users._id}}" class="boton_qr">Código QR</button>
     
-      <button class="btn btn-lg btn-secondary btninfouser" id="botonAgenda" data-id="{{users._id}}" class="boton_qr">Inserta algo en tu agenda</button>
+      <button class="btn btn-lg btn-primary btninfouser" id="botonAgenda" data-id="{{users._id}}" class="boton_qr">Inserta algo en tu agenda</button>
 
-      <button  class="btn btn-lg btn-secondary btninfouser"id="botonAgendas" data-id="{{users._id}}" class="boton_qr">Ver agenda</button>
+      <button  class="btn btn-lg btn-primary btninfouser"id="botonAgendas" data-id="{{users._id}}" class="boton_qr">Ver agenda</button>
     </div>
 
 
     {{#if users.acknowledged}}
-    <div class="bitacora flex-container">
-      <a href="/principal/bitacora"><button class="btn btn-lg btn-secondary" type="button">Bitacora</button></a> 
+    <div class="bitacora flex-container descripcion-perfil">
+      <a href="/principal/bitacora"><button class="btn btn-lg btn-primary" type="button">Bitacora</button></a> 
       </div>
     {{/if}}
 
