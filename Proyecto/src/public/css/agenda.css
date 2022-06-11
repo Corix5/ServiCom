@@ -1,5 +1,6 @@
 .agendaLectura{
     justify-content: space-around;
+    background-color: white;
 }
 
 #textoAgenda,#textoFecha{

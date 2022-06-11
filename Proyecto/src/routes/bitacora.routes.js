@@ -1,8 +1,14 @@
 const {Router} = require('express');
-
 const router = Router();
 
-const{renderBitacoracreate, createBitacora,renderListBitacoras, renderEditBitacora, updateBitacora, deleteBitacora} = require('../controllers/bitacora.controller');
+
+const{renderBitacoracreate, 
+    createBitacora,
+    renderListBitacoras, 
+    renderEditBitacora,
+     updateBitacora, 
+     deleteBitacora} = require('../controllers/bitacora.controller');
+
 
 //new note
 router.get('/principal/bitacora', renderBitacoracreate); // obetener algo del servidor
