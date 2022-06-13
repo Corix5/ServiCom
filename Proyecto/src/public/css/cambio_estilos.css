@@ -1,0 +1,33 @@
+iframe{
+    background-color: #FFF;
+}
+
+body{
+    background-color: rgba(194, 189, 219, 0.329);
+}
+
+.mr-auto{
+    margin-right: 10%;
+}
+
+.carousel-item{
+    border-bottom: rgb(7, 193, 218) 5px double;
+    border-top: rgb(7, 193, 218) 2px solid;
+}
+
+#msgArea{
+    border-top: rgb(7, 193, 218) 2px solid;
+}
+
+.list-group-item{
+    border-bottom: rgba(25, 0, 255, 0.699) 1px solid;
+}
+
+.bg-dark{
+    background-color: #FFF;
+}
+
+.flex-container{
+    border-top: rgb(7, 193, 218) 1px solid;
+    border-bottom: rgb(7, 193, 218) 5px double;
+}
